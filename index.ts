@@ -1,9 +1,6 @@
 import createAuth0Client, { Auth0Client } from "@auth0/auth0-spa-js";
-import "./index.scss"
-
-declare const ENV: { [key: string]: string };
-
-const { AUTH_DOMAIN, AUTH_CLIENT } = ENV;
+import { AUTH_CLIENT, AUTH_DOMAIN, DOMAIN } from "./env";
+import "./index.scss";
 
 function processAuthPromises(
   actions: {
@@ -38,7 +35,7 @@ function onClientHasAuthResult(client: Auth0Client) {
 }
 
 function onClientAuthNotStarted(client: Auth0Client) {
-  client.loginWithPopup();
+  client.loginWithRedirect({ redirect_uri: window.location.href });
 }
 
 function onClientLogout(client: Auth0Client) {
@@ -55,12 +52,17 @@ function shouldLogout(search: URLSearchParams) {
   return search.has("logout");
 }
 
-function getRedirectApp(search: URLSearchParams) {
-  if (!search.has("redirectApp")) {
-    throw new Error("no redirect app");
+function redirectApp(app: string | null) {
+  const appNameParts = [];
+  if (app !== null) {
+    appNameParts.push(app);
   }
+  appNameParts.push(DOMAIN);
+  return `https://${appNameParts.join(".")}/`;
+}
 
-  return search.get("redirectApp") || "";
+function getRedirectApp(search: URLSearchParams) {
+  return redirectApp(search.get("redirectApp"));
 }
 
 function onClientReady(client: Auth0Client) {
@@ -83,8 +85,8 @@ function onLoad() {
     domain: AUTH_DOMAIN,
     client_id: AUTH_CLIENT,
     advancedOptions: {
-      defaultScope: 'oidc profile email usernamer'
-    }
+      defaultScope: "oidc profile email username",
+    },
   }).then(onClientReady);
 }
 
