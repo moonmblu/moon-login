@@ -1,4 +1,5 @@
 import createAuth0Client, { Auth0Client } from "@auth0/auth0-spa-js";
+import "./index.scss"
 
 declare const ENV: { [key: string]: string };
 
