@@ -68,35 +68,33 @@ function getRedirectApp(search: URLSearchParams) {
 }
 
 function onClientReady(client: Auth0Client) {
-  client.isAuthenticated().then(function () {
-    const search = new URLSearchParams(window.location.search);
-    if (shouldLogout(search)) {
-      return onClientLogout(client);
-    }
-    if (hasAuthResult(search)) {
-      return onClientHasAuthResult(client);
-    }
-    if (getRedirectApp(search)) {
-      return onClientAuthNotStarted(client);
-    }
-  });
+  const search = new URLSearchParams(window.location.search);
+  if (shouldLogout(search)) {
+    return onClientLogout(client);
+  }
+  if (hasAuthResult(search)) {
+    return onClientHasAuthResult(client);
+  }
+  if (getRedirectApp(search)) {
+    return onClientAuthNotStarted(client);
+  }
 }
-
 
 function loader() {
   render(h(Loader, {}), document.body);
 }
 
-
 function onLoad() {
   loader();
-  // createAuth0Client({
-  //   domain: AUTH_DOMAIN,
-  //   client_id: AUTH_CLIENT,
-  //   advancedOptions: {
-  //     defaultScope: "oidc profile email username",
-  //   },
-  // }).then(onClientReady);
+  setTimeout(() => {
+    createAuth0Client({
+      domain: AUTH_DOMAIN,
+      client_id: AUTH_CLIENT,
+      advancedOptions: {
+        defaultScope: "oidc openid profile email",
+      },
+    }).then(onClientReady);
+  }, 500);
 }
 
 window.addEventListener("load", onLoad);
