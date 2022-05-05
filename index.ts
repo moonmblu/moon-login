@@ -38,9 +38,7 @@ function onClientHasAuthResult(client: Auth0Client) {
 }
 
 function onClientAuthNotStarted(client: Auth0Client) {
-  client.loginWithRedirect({
-    redirect_uri: window.location.href,
-  });
+  client.loginWithPopup();
 }
 
 function onClientLogout(client: Auth0Client) {
@@ -84,6 +82,9 @@ function onLoad() {
   createAuth0Client({
     domain: AUTH_DOMAIN,
     client_id: AUTH_CLIENT,
+    advancedOptions: {
+      defaultScope: 'oidc profile email usernamer'
+    }
   }).then(onClientReady);
 }
 
