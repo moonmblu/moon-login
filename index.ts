@@ -1,6 +1,8 @@
 import createAuth0Client, { Auth0Client } from "@auth0/auth0-spa-js";
+import { h, render } from "preact";
 import { AUTH_CLIENT, AUTH_DOMAIN, DOMAIN } from "./env";
 import "./index.scss";
+import { Loader } from "./Loader";
 
 function processAuthPromises(
   actions: {
@@ -80,14 +82,21 @@ function onClientReady(client: Auth0Client) {
   });
 }
 
+
+function loader() {
+  render(h(Loader, {}), document.body);
+}
+
+
 function onLoad() {
-  createAuth0Client({
-    domain: AUTH_DOMAIN,
-    client_id: AUTH_CLIENT,
-    advancedOptions: {
-      defaultScope: "oidc profile email username",
-    },
-  }).then(onClientReady);
+  loader();
+  // createAuth0Client({
+  //   domain: AUTH_DOMAIN,
+  //   client_id: AUTH_CLIENT,
+  //   advancedOptions: {
+  //     defaultScope: "oidc profile email username",
+  //   },
+  // }).then(onClientReady);
 }
 
 window.addEventListener("load", onLoad);

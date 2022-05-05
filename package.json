@@ -12,6 +12,7 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
-    "@auth0/auth0-spa-js": "^1.21.0"
+    "@auth0/auth0-spa-js": "^1.21.0",
+    "preact": "^10.7.1"
   }
 }
