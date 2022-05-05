@@ -4,7 +4,7 @@
 
 "@auth0/auth0-spa-js@^1.21.0":
   version "1.21.0"
-  resolved "https://registry.npmjs.org/@auth0/auth0-spa-js/-/auth0-spa-js-1.21.0.tgz"
+  resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-1.21.0.tgz#9c6df09e8af817fbb890f9773ff478c5ca581aaa"
   integrity sha512-a+8+onJdOIUSEEjdIzP/BGd731DZjBn2Q0tH+v7H+bN9ldeuBOifnjPbFwQAriL+94SwkaqhoFx3L6uGDk3+vg==
   dependencies:
     abortcontroller-polyfill "^1.7.3"
@@ -122,7 +122,7 @@
 
 abortcontroller-polyfill@^1.7.3:
   version "1.7.3"
-  resolved "https://registry.npmjs.org/abortcontroller-polyfill/-/abortcontroller-polyfill-1.7.3.tgz"
+  resolved "https://registry.yarnpkg.com/abortcontroller-polyfill/-/abortcontroller-polyfill-1.7.3.tgz#1b5b487bd6436b5b764fd52a612509702c3144b5"
   integrity sha512-zetDJxd89y3X99Kvo4qFx8GKlt6GsvN3UcRZHwU6iFA/0KiOmhkTVhe8oRoTBiTVPZu09x3vCra47+w8Yz1+2Q==
 
 ansi-styles@^3.2.1:
@@ -159,7 +159,7 @@ braces@~3.0.2:
 
 browser-tabs-lock@^1.2.15:
   version "1.2.15"
-  resolved "https://registry.npmjs.org/browser-tabs-lock/-/browser-tabs-lock-1.2.15.tgz"
+  resolved "https://registry.yarnpkg.com/browser-tabs-lock/-/browser-tabs-lock-1.2.15.tgz#d5012e652e2a0cb4eba471b0a2300c2fa5d92788"
   integrity sha512-J8K9vdivK0Di+b8SBdE7EZxDr88TnATing7XoLw6+nFkXMQ6sVBh92K3NQvZlZU91AIkFRi0w3sztk5Z+vsswA==
   dependencies:
     lodash ">=4.17.21"
@@ -248,7 +248,7 @@ commander@^7.2.0:
 
 core-js@^3.20.3:
   version "3.22.4"
-  resolved "https://registry.npmjs.org/core-js/-/core-js-3.22.4.tgz"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.22.4.tgz#f4b3f108d45736935aa028444a69397e40d8c531"
   integrity sha512-1uLykR+iOfYja+6Jn/57743gc9n73EWiOnSJJ4ba3B4fOEYDBv25MagmEZBxTp5cWq4b/KPx/l77zgsp28ju4w==
 
 cosmiconfig@^7.0.1:
@@ -398,9 +398,9 @@ dotenv@^16.0.0:
   integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
 
 electron-to-chromium@^1.4.118:
-  version "1.4.134"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.134.tgz#9baca7a018ca489d8e81a00c7cfe15161da38568"
-  integrity sha512-OdD7M2no4Mi8PopfvoOuNcwYDJ2mNFxaBfurA6okG3fLBaMcFah9S+si84FhX+FIWLKkdaiHfl4A+5ep/gOVrg==
+  version "1.4.135"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.135.tgz#191e70540ffdb78f6fd7769cd3ae3d4943074656"
+  integrity sha512-jrww0WXvJYEUvhhNso4dobAhc7RXWmzOou9dciZ4UrtlSRwR6sNtXgrStyOGHT0P0oK3Rxr+Z47GNcbKXG+iSA==
 
 entities@^2.0.0:
   version "2.2.0"
@@ -416,7 +416,7 @@ error-ex@^1.3.1:
 
 es-cookie@^1.3.2:
   version "1.3.2"
-  resolved "https://registry.npmjs.org/es-cookie/-/es-cookie-1.3.2.tgz"
+  resolved "https://registry.yarnpkg.com/es-cookie/-/es-cookie-1.3.2.tgz#80e831597f72a25721701bdcb21d990319acd831"
   integrity sha512-UTlYYhXGLOy05P/vKVT2Ui7WtC7NiRzGtJyAKKn32g5Gvcjn7KAClLPWlipCtxIus934dFg9o9jXiBL0nP+t9Q==
 
 escalade@^3.1.1:
@@ -446,7 +446,7 @@ eventemitter3@^4.0.4:
 
 fast-text-encoding@^1.0.3:
   version "1.0.3"
-  resolved "https://registry.npmjs.org/fast-text-encoding/-/fast-text-encoding-1.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/fast-text-encoding/-/fast-text-encoding-1.0.3.tgz#ec02ac8e01ab8a319af182dae2681213cfe9ce53"
   integrity sha512-dtm4QZH9nZtcDt8qJiOH9fcQd1NAgi+K1O2DbE6GG1PPCK/BWfOH3idCTRQ4ImXRUOyopDEgDEnVEE7Y/2Wrig==
 
 fill-range@^7.0.1:
@@ -611,7 +611,7 @@ lodash.uniq@^4.5.0:
 
 lodash@>=4.17.21:
   version "4.17.21"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 magic-string@^0.25.7:
@@ -637,6 +637,14 @@ mime-types@^2.1.34:
   integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
   dependencies:
     mime-db "1.52.0"
+
+"moon-ui-scss@git+https://github.com/moonmblu/marxathome-scss.git":
+  version "0.0.1"
+  resolved "git+https://github.com/moonmblu/marxathome-scss.git#dbf941f53bb85b37d373b0958ccf6ef7525201eb"
+
+"moon-ui@https://github.com/moonmblu/moon-ui.git":
+  version "0.0.1"
+  resolved "https://github.com/moonmblu/moon-ui.git#cae884751c01966ca202f5c98a2f022b829b0784"
 
 nanoid@^3.3.3:
   version "3.3.4"
@@ -975,7 +983,7 @@ preact@^10.7.1:
 
 promise-polyfill@^8.2.1:
   version "8.2.3"
-  resolved "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-8.2.3.tgz"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.3.tgz#2edc7e4b81aff781c88a0d577e5fe9da822107c6"
   integrity sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==
 
 query-string@^7.1.0:
@@ -1034,9 +1042,9 @@ rollup-plugin-styles@^4.0.0:
     tslib "^2.3.1"
 
 rollup@^2.71.1:
-  version "2.71.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.71.1.tgz#82b259af7733dfd1224a8171013aaaad02971a22"
-  integrity sha512-lMZk3XfUBGjrrZQpvPSoXcZSfKcJ2Bgn+Z0L1MoW2V8Wh7BVM+LOBJTPo16yul2MwL59cXedzW1ruq3rCjSRgw==
+  version "2.72.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.72.0.tgz#f94280b003bcf9f2f1f2594059a9db5abced371e"
+  integrity sha512-KqtR2YcO35/KKijg4nx4STO3569aqCUeGRkKWnJ6r+AvBBrVY9L4pmf4NHVrQr4mTOq6msbohflxr2kpihhaOA==
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -1126,12 +1134,12 @@ tslib@^2.3.1, tslib@^2.4.0:
 
 typescript@^4.6.4:
   version "4.6.4"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-4.6.4.tgz"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
   integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
 
 unfetch@^4.2.0:
   version "4.2.0"
-  resolved "https://registry.npmjs.org/unfetch/-/unfetch-4.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-4.2.0.tgz#7e21b0ef7d363d8d9af0fb929a5555f6ef97a3be"
   integrity sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==
 
 universalify@^2.0.0:

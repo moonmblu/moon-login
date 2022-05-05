@@ -8,6 +8,7 @@
     "strict": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment"
+    "jsxFragmentFactory": "Fragment",
+    "skipLibCheck": false
   }
 }

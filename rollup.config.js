@@ -13,7 +13,7 @@ function env(keyPrefix = "MOON_LOGIN_") {
       if (key.startsWith(keyPrefix)) {
         return { ...env, [key.slice(keyPrefix.length)]: process.env[key] };
       }
-      return env
+      return env;
     }, {})
   );
 }
@@ -25,13 +25,13 @@ export default {
     format: "iife",
   },
   plugins: [
-    typescript(),
     nodeResolve(),
+    typescript(),
     html(),
     replace({
       preventAssignment: true,
       ENV: env(),
     }),
-    styles()
+    styles(),
   ],
 };

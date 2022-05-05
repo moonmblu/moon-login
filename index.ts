@@ -2,7 +2,7 @@ import createAuth0Client, { Auth0Client } from "@auth0/auth0-spa-js";
 import { h, render } from "preact";
 import { AUTH_CLIENT, AUTH_DOMAIN, DOMAIN } from "./env";
 import "./index.scss";
-import { Loader } from "./Loader";
+import { Loader } from "moon-ui/build/Loader";
 
 function processAuthPromises(
   actions: {
