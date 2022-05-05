@@ -50,6 +50,10 @@ function hasAuthResult(search: URLSearchParams) {
   return search.has("code") && search.has("state");
 }
 
+function shouldHaltForDebug(search: URLSearchParams) {
+  return search.has("haltForDebug");
+}
+
 function shouldLogout(search: URLSearchParams) {
   return search.has("logout");
 }
@@ -67,8 +71,12 @@ function getRedirectApp(search: URLSearchParams) {
   return redirectApp(search.get("redirectApp"));
 }
 
+
 function onClientReady(client: Auth0Client) {
   const search = new URLSearchParams(window.location.search);
+  if (shouldHaltForDebug(search)) {
+    return
+  }
   if (shouldLogout(search)) {
     return onClientLogout(client);
   }
