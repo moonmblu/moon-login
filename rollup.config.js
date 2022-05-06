@@ -27,7 +27,9 @@ export default {
   plugins: [
     nodeResolve(),
     typescript(),
-    html(),
+    html({
+      title: "MarxAtHome - Login"
+    }),
     replace({
       preventAssignment: true,
       ENV: env(),
