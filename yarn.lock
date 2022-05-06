@@ -1091,7 +1091,7 @@ minimatch@^3.0.4:
 
 "moon-ui@git+https://github.com/moonmblu/moon-ui.git":
   version "0.0.1"
-  resolved "git+https://github.com/moonmblu/moon-ui.git#d322c3b641000b065b070695fd512bf6d34a21c1"
+  resolved "git+https://github.com/moonmblu/moon-ui.git#bde797cbafc604e91341cddb47631fa6599a0180"
   dependencies:
     "@svgr/cli" "^6.2.1"
 
